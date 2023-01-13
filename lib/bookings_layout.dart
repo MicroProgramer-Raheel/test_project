@@ -113,15 +113,13 @@ class BookingsLayout extends StatelessWidget {
                   ),
                 ),
                 SizedBox(height: size.height * 0.05),
-                Expanded(
-                  child: TabBarView(
-                    physics: NeverScrollableScrollPhysics(),
-                    children: [
-                      HotelLayout(),
-                      Event(),
-                      ShortLet(),
-                    ],
-                  ),
+                TabBarView(
+                  physics: NeverScrollableScrollPhysics(),
+                  children: [
+                    HotelLayout(),
+                    Event(),
+                    ShortLet(),
+                  ],
                 ),
               ],
             ),
